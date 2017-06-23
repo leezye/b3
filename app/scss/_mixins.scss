@@ -16,19 +16,20 @@ $s-5: spacer(5, x); // 3rem
 // ------- F O N T S I Z E helpers ****************
 //-------------------------------------------------
 $font-size: (
-  "f-xxs": 0.5rem,
-  "f-xs": $font-size-xs,
-  "f-s": $font-size-sm,
+  "f-xxs": $font-size-base / (1.5),
+  "f-xs": $font-size-base / (1.2),
+  "f-s": $font-size-base / (1.1),
   "f-r": $font-size-base,
-  "f-m": $font-size-lg,
-  "f-l": $font-size-base * 1.5,
-  "f-xl": $font-size-base * 2,
+  "f-m": $font-size-base * 1.5,
+  "f-l": $font-size-base * 2,
+  "f-xl": $font-size-base * 3,
+  "f-xxl": $font-size-base * 4
 );
 
 // create classes
 @each $font, $size in $font-size {
   .#{$font} {
-    font-size: $size 
+    font-size: $size
   }
 }
 
@@ -36,7 +37,7 @@ $font-size: (
 @function fontsize($size) {
   @return map-get($font-size, $size);
 }
- 
+
 $f-xxs: fontsize("f-xxs");
 $f-xs: fontsize("f-xs");
 $f-s: fontsize("f-s");
@@ -44,9 +45,25 @@ $f-r: fontsize("f-r");
 $f-m: fontsize("f-m");
 $f-l: fontsize("f-l");
 $f-xl: fontsize("f-xl");
+$f-xxl: fontsize("f-xxl");
 
+// ------- P O S I T I O N I N G helpers **********
+//-------------------------------------------------
+// centering -- https://css-tricks.com/snippets/sass/centering-mixin/
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
 
-
-
-
-
+// ------- BOOTSTRAP OVERRIDES **********
+//-------------------------------------------------
