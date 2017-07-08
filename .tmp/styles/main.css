@@ -1,3 +1,5 @@
+/* ------- Bootstrap 4 ***************************
+-------------------------------------------------*/
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -8893,3 +8895,40 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important;
   }
 }
+
+/* ------- Mixins / Helpers **********************
+-------------------------------------------------*/
+.f-xxs {
+  font-size: 0.6666666667rem;
+}
+
+.f-xs {
+  font-size: 0.8333333333rem;
+}
+
+.f-s {
+  font-size: 0.9090909091rem;
+}
+
+.f-r {
+  font-size: 1rem;
+}
+
+.f-m {
+  font-size: 1.1rem;
+}
+
+.f-l {
+  font-size: 1.3rem;
+}
+
+.f-xl {
+  font-size: 1.5rem;
+}
+
+.f-xxl {
+  font-size: 2rem;
+}
+
+/* ------- Components *************************
+-------------------------------------------------*/
