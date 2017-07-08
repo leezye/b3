@@ -8930,8 +8930,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 2rem;
 }
 
+/* Calculate fluid ratio based on two dimensions (width/height) */
 /* ------- Components *************************
 -------------------------------------------------*/
-.test-header {
-  color: #0275d8;
+.jumbotron {
+  padding-top: 8rem !important;
 }

@@ -29,3 +29,5 @@
 .f-xxl {
   font-size: 2rem;
 }
+
+/* Calculate fluid ratio based on two dimensions (width/height) */
