@@ -8932,3 +8932,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 /* ------- Components *************************
 -------------------------------------------------*/
+.test-header {
+  color: yellow;
+}
