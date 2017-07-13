@@ -1,5 +1,6 @@
 /* ------- Bootstrap 4 ***************************
 -------------------------------------------------*/
+@import "variables";
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
@@ -10,4 +11,4 @@
 
 /* ------- Components *************************
 -------------------------------------------------*/
-@import "components/header.scss";
+@import "global";
